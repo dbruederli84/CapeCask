@@ -466,8 +466,8 @@ section { padding: clamp(72px, 11vw, 130px) 0; }
 .tasting .batchline b { color: var(--bronze); font-weight: 600; }
 .record {
   margin-top: clamp(30px, 5vw, 54px);
-  display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
-  gap: 0 clamp(20px, 3.5vw, 44px);
+  display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 0 clamp(24px, 4vw, 48px);
 }
 .record-rule {
   background: linear-gradient(180deg, transparent, var(--gold) 18%, var(--gold) 82%, transparent);
@@ -478,20 +478,22 @@ section { padding: clamp(72px, 11vw, 130px) 0; }
 .tasting.in .record-rule { transform: scaleY(1); }
 .record-note { opacity: 0; transform: translateY(16px); transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out); }
 .tasting.in .record-note { opacity: 1; transform: none; }
-.tasting.in .record-note:nth-of-type(3) { transition-delay: 0.08s; }
-.tasting.in .record-note:nth-of-type(5) { transition-delay: 0.16s; }
-.tasting.in .record-note:nth-of-type(7) { transition-delay: 0.24s; }
-.record-note .marker {
-  display: block; width: 7px; height: 7px;
-  background: var(--bronze); transform: rotate(45deg);
-  margin: 4px 0 14px 1px;
+.tasting.in .record-note:nth-of-type(3) { transition-delay: 0.1s; }
+.tasting.in .record-note:nth-of-type(5) { transition-delay: 0.2s; }
+.record-note .stagept {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 12px;
 }
 .record-note h3 {
-  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
-  font-weight: 350; line-height: 1.2;
+  font-size: clamp(1.5rem, 2.6vw, 1.85rem);
+  font-weight: 350; line-height: 1.22;
   color: var(--text-1);
 }
-.record-note p { margin-top: 8px; color: var(--text-2); font-size: 0.96rem; max-width: 28ch; }
+.record-note p { margin-top: 10px; color: var(--text-2); font-size: 0.96rem; max-width: 30ch; }
 .tasting-serve {
   margin-top: clamp(32px, 5vw, 52px); padding-top: 22px;
   border-top: 1px solid var(--line-soft);
@@ -862,10 +864,9 @@ section { padding: clamp(72px, 11vw, 130px) 0; }
   </section>
 
   <!-- ================= TASTING NOTES — THE TASTING RECORD ================= -->
-  <!-- COPY STATUS: the four notes below are the ones already published on
-       the previous version of this site. Final nose/palate/finish copy and
-       any intensity values come from the owner-supplied fact sheets; swap
-       them in here when confirmed. Do not invent descriptors. -->
+  <!-- Tasting copy is drawn from the owner-supplied producer fact sheets
+       (2026-09-01) and the owner's descriptor preferences. Do not add or
+       alter descriptors without the owner's confirmation. -->
   <section class="tasting" id="tasting" aria-labelledby="tastingTitle">
     <div class="wrap">
       <h2 id="tastingTitle">Tasting <em>notes.</em></h2>
@@ -873,27 +874,21 @@ section { padding: clamp(72px, 11vw, 130px) 0; }
       <p class="lede">Master-blended entirely by taste. This is the profile the blender balances, batch by batch: at full proof, nothing hidden behind water.</p>
       <div class="record">
         <div class="record-note">
-          <span class="marker" aria-hidden="true"></span>
-          <h3>Rich stone fruit</h3>
-          <p>Sun-ripened Colombard and Chenin Blanc, concentrated in the barrel.</p>
+          <span class="stagept">Nose</span>
+          <h3>Ripe stone fruit, plum &amp; warm spice</h3>
+          <p>Cinnamon and citrus over honey, vanilla and a wisp of sweet tobacco.</p>
         </div>
         <div class="record-rule" aria-hidden="true"></div>
         <div class="record-note">
-          <span class="marker" aria-hidden="true"></span>
-          <h3>Warm spice</h3>
-          <p>Cask-strength warmth that opens with a few drops of water.</p>
+          <span class="stagept">Palate</span>
+          <h3>Oak, dried fruit &amp; crème brûlée</h3>
+          <p>Delicate chocolate, caramel and nuts, a hint of coffee. All of it at full proof.</p>
         </div>
         <div class="record-rule" aria-hidden="true"></div>
         <div class="record-note">
-          <span class="marker" aria-hidden="true"></span>
-          <h3>Oak &amp; vanilla</h3>
-          <p>Sixteen years of French oak, medium char, working on the spirit.</p>
-        </div>
-        <div class="record-rule" aria-hidden="true"></div>
-        <div class="record-note">
-          <span class="marker" aria-hidden="true"></span>
-          <h3>Long, unhurried finish</h3>
-          <p>Heat that carries the fruit, then stays. Patient, like everything else we do.</p>
+          <span class="stagept">Finish</span>
+          <h3>Long, velvety &amp; warm</h3>
+          <p>Elegant and unhurried, with the warmth only cask strength keeps.</p>
         </div>
       </div>
       <div class="tasting-serve">
