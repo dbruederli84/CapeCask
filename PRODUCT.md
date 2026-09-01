@@ -30,6 +30,7 @@ Pre-release: not yet available for sale in the United States; distribution inqui
 - Three industry reference sites informed inspiration only and must never be named, credited, or linked on the site.
 - Tasting descriptors must come from owner-supplied sources. Owner is supplying two producer fact sheets (PDFs) and an industry flavour-framework page; until those arrive, only the four notes already published on the live site may be used, without invented elaboration. OPEN: final nose/palate/finish copy and any intensity values await those sources.
 - Owner confirmed (2026-09-01): Batch No. 01, "Cape Gold", 16 years, French oak = ONE bottling, not separate products.
+- Copy veto (owner, 2026-09-01): never describe the brandy as "smooth" — to the owner it reads as lack of flavour. Use e.g. "long", "unhurried", "warm", "patient" for the finish instead.
 
 ## Brand Commitments
 
