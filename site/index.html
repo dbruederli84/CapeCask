@@ -714,7 +714,9 @@ section { padding: clamp(72px, 11vw, 130px) 0; }
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Cape Cask Brandy — home">
-      <img src="images/logo-horizontal.svg" alt="Cape Cask" width="1339" height="132" />
+      <!-- The link carries the accessible name, so the image is decorative;
+           a second name here would announce the brand twice. -->
+      <img src="images/logo-horizontal.svg" alt="" width="1339" height="132" />
     </a>
     <nav class="site-nav" aria-label="Main" id="siteNav">
       <a href="#story">Story</a>
